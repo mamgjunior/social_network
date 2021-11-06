@@ -10,6 +10,9 @@ urlpatterns = [
 
     # Este padrão de urls substitui todos os colocados abaixo
     path('', include('django.contrib.auth.urls')),
+
+    # Esta url é para a criação de novos usuários
+    path('register/', views.register, name='register'),
 ]
 
 """
