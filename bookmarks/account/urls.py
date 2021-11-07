@@ -13,6 +13,8 @@ urlpatterns = [
 
     # Esta url é para a criação de novos usuários
     path('register/', views.register, name='register'),
+
+    path('edit/', views.edit, name='edit'),
 ]
 
 """
