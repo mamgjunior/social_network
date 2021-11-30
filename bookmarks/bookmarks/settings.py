@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'django_extensions',
     'images.apps.ImagesConfig',
     'easy_thumbnails',
+    'actions.apps.ActionsConfig',
 ]
 
 MIDDLEWARE = [
@@ -165,3 +166,7 @@ SOCIAL_AUTH_TWITTER_SECRET = 'E5s7QNQaqkMzsvy0ayJe9zan5a460hjWX1x9XP42KHtxIlTNmE
 ABSOLUTE_URL_OVERRIDES = {
     'auth.user': lambda u: reverse_lazy('user_detail', args=[u.username])
 }
+
+REDIS_HOST = 'localhost'
+REDIS_PORT = '6379'
+REDIS_DB = 0
